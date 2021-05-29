@@ -1,21 +1,15 @@
-function myEvent(event) {
-  let groupOfKeys = document.getElementById('keyHolder');
-  let indivisualKey = groupOfKeys.children;
-  for (let i = 0; i < indivisualKey.length; i++) {
-    if (indivisualKey[i].getAttribute('id') == event.keyCode) {
-      let id = indivisualKey[i].getAttribute('id') + '1';
-      let audio = document.getElementById(id);
-      audio.currentTime = 0;
-      audio.play();
-      indivisualKey[i].classList.add('keyAnimations');
-      function removeTransition(event) {
-        if (event.propertyName == 'width') {
-          indivisualKey[i].classList.remove('keyAnimations');
-        }
-      }
-      indivisualKey[i].addEventListener('transitionend', removeTransition);
+function playDrumSound(event) {
+  let indivisualKey = document.getElementById(event.keyCode);
+  let audio = document.getElementById(event.keyCode + '1');
+  if (audio == null) return;
+  audio.currentTime = 0;
+  audio.play();
+  indivisualKey.classList.add('keyTransition');
+  function removeKeyTransition(event) {
+    if (event.propertyName == 'width') {
+      indivisualKey.classList.remove('keyTransition');
     }
   }
+  indivisualKey.addEventListener('transitionend', removeKeyTransition);
 }
-
-window.addEventListener('keydown', myEvent);
+window.addEventListener('keydown', playDrumSound);

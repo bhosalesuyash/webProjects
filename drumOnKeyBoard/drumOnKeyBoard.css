@@ -42,7 +42,6 @@ h2 {
   width: 940px;
   height: 70;
   margin: auto auto;
-  /*background-color: red;*/
 }
 
 .keys {
@@ -59,7 +58,7 @@ h2 {
   width: 100px;
   line-height: 20px;
 }
-.keyAnimations {
+.keyTransition {
   transform: scale(1.1);
   font-size: 40px;
   width: 110px;
