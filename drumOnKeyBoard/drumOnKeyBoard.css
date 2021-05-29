@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+.bodyMy {
+  background-image: url(img/backgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 755px;
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+  font-family: 'Press Start 2P';
+  margin-top: -740px;
+  padding-top: 15px;
+  text-align: center;
+  color: whitesmoke;
+}
+.headingBackground {
+  background-color: red;
+  width: 650px;
+  height: 150px;
+  position: relative;
+  margin: auto auto;
+  border-radius: 50px;
+}
+h2 {
+  font-family: 'Press Start 2P';
+}
+.instructionHeading {
+  height: 120px;
+  width: 950px;
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  border-radius: 50px;
+}
+#getAudio {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 940px;
+  height: 70;
+  margin: auto auto;
+  /*background-color: red;*/
+}
+
+.keys {
+  position: relative;
+  float: left;
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+  font-size: 30px;
+  font-weight: bolder;
+  border: 2px solid;
+  border-radius: 10px;
+  width: 100px;
+  line-height: 20px;
+}
+.tuneName {
+  font-size: 15px;
+}
